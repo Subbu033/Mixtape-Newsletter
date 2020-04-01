@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+
+*,
+*::before,
+*::after{box-sizing:border-box;}
+a{text-decoration:none; color:inherit; cursor:pointer;}
+button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
+figure{margin:0;}
+input::-moz-focus-inner {border:0; padding:0; margin:0;}
+ul, ol, dd{margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
+p{margin:0;}
+[hidden] { display: none !important;}
+body{font-size: 16px;font-family: 'Helvetica Neue', sans-serif;margin:0;padding:0;line-height: 1.5;}
+
+.content_block{display: flex;}
+
+.output_block{width:70%;}
+.templates_list{display: flex;align-items: center;justify-content: center;padding:15px 0 50px 0;background-color: #303D5A;}
+.templates_list a{padding: 10px 25px;margin:0 5px; font-weight: 500;color:rgba(255,255,255,.65);text-decoration: none;border-radius: 5px;}
+.templates_list a.active{color:#fff;background-color:#101c35;}
+.templates_output_block{display: flex;height:calc(100vh - 111px);background-color: #F6F7FB;justify-content: center;}
+.templates_output_container{background-color: #fff;border-radius: 10px;position: relative;top:-30px;width:75%;padding:15px;height:calc(100% + 30px)}
+.templates_output_view{max-height:100%;overflow-y: auto;}
+
+.left_block{width:30%;overflow-y: auto;height:100vh;}
+.input{width:100%;height: 45px;padding:5px 10px;border:1px solid #D6D7E5;border-radius: 5px;font-size: 14px;vertical-align: top;}
+textarea.input{height:85px;}
+.editor_header{padding: 15px 10px;display: flex;align-items: center;justify-content: space-between;}
+.editor_header img{max-width: 30%;}
+.editor_header .input{width: 40%;height: 35px;}
+.editor_category_title{background-color: #dee4f1;}
+.editor_category_title a{font-weight:500;color:#2D3050;padding:10px 20px;display: block;}
+.editor_category_title a:hover{color: #3472FA;}
+.editor_category ul.editor_category_list{padding: 15px 20px;list-style: none;}
+.editor_category ul.editor_category_list li{padding-bottom: 15px;}
+.editor_category ul.editor_category_list li label{display: block;margin-bottom: 3px;color: #7f85a5;font-size:14px;}
+.button{padding: 8px 15px;background-color: #3472FA;color: #fff;border-radius: 5px;font-weight: 600;border: 0;font-size: 12px;}
+
+.editor_category_tab > ul{padding:15px 20px;display: flex;}
+.editor_category_tab > ul li{margin:0 20px 0 0;padding:5px 15px;border-bottom: 3px solid transparent;font-weight: 500;cursor: pointer;font-size: 14px;}
+.editor_category_tab > ul li.active{border-color: #3472FA;color:#3472FA;}
+

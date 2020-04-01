@@ -1,0 +1,242 @@
+
+Template 2
+<table width="100%" cellpadding="0" cellspacing="0" border="0" role="Presentation">
+    <tr>
+        <td align="center" style="font-size: 16px;font-family: 'Muli', sans-serif;">
+            <table width="600" cellpadding="0" cellspacing="0" border="0" role="Presentation">
+                <tbody>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" role="Presentation" style="width:100% !important;">
+                                <tr height="20"><td colspan="2" valign="top"></td></tr>
+                                <tr>
+                                    <td valign="middle"><img src="{{headerItems.logo}}" alt="Mixtape - The design newsletter" width="180" /></td>
+                                    <td align="right" valign="middle"><p style="margin: 0;font-size: 80%;text-align: right;font-family: 'Muli', sans-serif;">{{headerItems.date}}</p></td>
+                                </tr>
+                                <tr height="15"><td colspan="2" valign="top" style="border-bottom: 1px solid #000;"></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" role="Presentation">
+                                <tbody>
+                                    <tr height="30"><td colspan="3"></td></tr>
+                                    <tr>
+                                        <td width="10"></td>
+                                        <td>
+                                            <p style="margin:0;font-family: 'Muli', sans-serif;">{{topPicks.quote}}</p>
+                                            <span style="color: #BCBDC2;font-size: 75%;font-family: 'Muli', sans-serif;">- Found on the internet</span>
+                                        </td>
+                                        <td width="10"></td>
+                                    </tr>
+                                    <tr height="10"><td colspan="3"></td></tr>
+                                    <tr>
+                                        <td width="10"></td>
+                                        <td>
+                                            <img src="{{topPicks.illustration}}" alt="Illustration of the month" width="100%" style="vertical-align: top;" />
+                                            <p style="color: #BCBDC2;font-size: 75%;margin:5px 0 0 0;font-family: 'Muli', sans-serif;">Artwork by <a href="{{topPicks.artistlink}}" target="_blank" style="color: #BCBDC2;font-size: 12px;margin:0">{{topPicks.artworkby}}</a></p>
+                                        </td>
+                                        <td width="10"></td>
+                                    </tr>
+                                    <tr height="25"><td colspan="3"></td></tr>
+                                    <tr>
+                                        <td width="10"></td>
+                                        <td>
+                                            <h1 style="margin: 0;mso-line-height-rule:exactly;font-size: 150%;font-family: Georgia, 'Times New Roman', sans-serif;font-weight: normal;">{{introduction.title}}</h1>
+                                            <p style="margin:10px 0 0 0;font-family: 'Muli', sans-serif;">{{introduction.description}}</p>
+                                        </td>
+                                        <td width="10"></td>
+                                    </tr>
+                                    <tr height="20"><td colspan="3"></td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                
+                <tbody>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" role="Presentation">
+                                <thead>
+                                    <tr height="25"><th colspan="3"></th></tr>
+                                    <tr>
+                                        <th width="10"></th>
+                                        <th align="left">
+                                            <h2 style="margin: 0;mso-line-height-rule:exactly;font-size: 150%;font-family: Georgia, 'Times New Roman', sans-serif;font-weight: normal;">Side A</h2>
+                                        </th>
+                                        <th width="10"></th>
+                                    </tr>
+                                    <tr height="10"><th colspan="3"></th></tr>
+                                </thead>    
+                                <tbody *ngFor="let sideA_article of sideA">
+                                    <tr>
+                                        <td colspan="3">
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#EFF3F4" role="Presentation">
+                                                <tbody>
+                                                    <tr height="15"><td colspan="3"></td></tr>
+                                                    <tr>
+                                                        <td width="15"></td>
+                                                        <td>
+                                                            <table width="100%" cellpadding="0" cellspacing="0" border="0" role="Presentation">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td width="40%" valign="top">
+                                                                            <a href="{{sideA_article.link}}" target="_blank">
+                                                                                <img src="{{sideA_article.imageURL}}" alt="{{sideA_article.title}}" width="100%" style="vertical-align: top;" />
+                                                                            </a>
+                                                                        </td>
+                                                                        <td width="15" valign="top"></td>
+                                                                        <td  valign="top">
+                                                                            <span style="font-size: 80%;font-family: 'Muli', sans-serif;color:#666;text-transform: uppercase;">{{sideA_article.tag}}</span>
+                                                                            <h3 style="margin: 0;mso-line-height-rule:exactly;font-size: 110%;font-weight: bold;line-height: 1.2;font-family: 'Muli', sans-serif;">{{sideA_article.title}}</h3>
+                                                                            <p style="margin:10px 0 10px 0;font-family: 'Muli', sans-serif;line-height: 1.3;">{{sideA_article.description}}</p>
+                                                                            <a href="{{sideA_article.link}}" target="_blank" style="color:#4096c8;text-decoration: none;font-family: 'Muli', sans-serif;">Read Through</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td width="15"></td>
+                                                    </tr>
+                                                    <tr height="15"><td colspan="3"></td></tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr height="30"><td colspan="3"></td></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FDDCBD" role="Presentation">
+                                <thead>
+                                    <tr height="20"><th colspan="3"></th></tr>
+                                    <tr>
+                                        <th width="15"></th>
+                                        <th align="left">
+                                            <h2 style="margin: 0;mso-line-height-rule:exactly;font-size: 150%;font-family: Georgia, 'Times New Roman', sans-serif;font-weight: normal;">Now Rolling</h2>
+                                        </th>
+                                        <th width="15"></th>
+                                    </tr>
+                                    <tr height="15"><th colspan="3"></th></tr>
+                                </thead>   
+                                <tbody>
+                                    <tr>
+                                        <td width="15"></td>
+                                        <td>
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0" role="Presentation">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" style="line-height: 1.3;color: #4096c8;font-family: 'Muli', sans-serif;">
+                                                            <div style="max-width: 180px;">
+                                                                <a href="{{nowRolling[0].link}}" target="_blank" style="text-decoration: none;color: #4096c8;font-family: 'Muli', sans-serif;">
+                                                                    <img src="{{nowRolling[0].image}}" alt="{{nowRolling[0].title}}" style="width:100%;max-width:180px;" />
+                                                                    <span>{{nowRolling[0].title}}</span>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                        <td width="15"></td>
+                                                        <td align="center" valign="top" style="line-height: 1.3;color: #4096c8;font-family: 'Muli', sans-serif;">
+                                                            <div style="max-width: 180px;">
+                                                                <a href="{{nowRolling[1].link}}" target="_blank" style="text-decoration: none;color: #4096c8;font-family: 'Muli', sans-serif;">
+                                                                    <img src="{{nowRolling[1].image}}" alt="{{nowRolling[1].title}}" style="width:100%;max-width:180px;" />
+                                                                    <span>{{nowRolling[1].title}}</span>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                        <td width="15"></td>
+                                                        <td align="center" valign="top" style="line-height: 1.3;color: #4096c8;font-family: 'Muli', sans-serif;">
+                                                            <div style="max-width: 180px;">
+                                                                <a href="{{nowRolling[2].link}}" target="_blank" style="text-decoration: none;color: #4096c8;font-family: 'Muli', sans-serif;">
+                                                                    <img src="{{nowRolling[2].image}}" alt="{{nowRolling[2].title}}" style="width:100%;max-width:180px;" />
+                                                                    <span>{{nowRolling[2].title}}</span>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td width="15"></td>
+                                    </tr>
+                                    <tr height="15"><th colspan="3"></th></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr height="30"><td></td></tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#E0E5FF" role="Presentation">
+                                <thead>
+                                    <tr height="20"><th colspan="3"></th></tr>
+                                    <tr>
+                                        <th width="15"></th>
+                                        <th align="left">
+                                            <h2 style="margin: 0;mso-line-height-rule:exactly;font-size: 150%;font-family: Georgia, 'Times New Roman', sans-serif;font-weight: normal;">Cassette Library</h2>
+                                        </th>
+                                        <th width="15"></th>
+                                    </tr>
+                                    <tr height="15"><th colspan="3"></th></tr>
+                                </thead>   
+                                <tbody *ngFor="let cassetteLibrary_article of cassetteLibrary">
+                                    <tr>
+                                        <td width="15"></td>
+                                        <td>
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0" role="Presentation">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="40%" valign="top">
+                                                            <a href="{{cassetteLibrary_article.link}}" target="_blank">
+                                                                <img src="{{cassetteLibrary_article.image}}" alt="{{cassetteLibrary_article.title}}" width="100%" style="vertical-align: top;" />
+                                                            </a>
+                                                        </td>
+                                                        <td width="15" valign="top"></td>
+                                                        <td  valign="top">
+                                                            <h3 style="margin: 0;mso-line-height-rule:exactly;font-size: 110%;font-weight: bold;line-height: 1.2;font-family: 'Muli', sans-serif;">{{cassetteLibrary_article.title}}</h3>
+                                                            <p style="margin:10px 0 10px 0;font-family: 'Muli', sans-serif;line-height: 1.3;">{{cassetteLibrary_article.description}}</p>
+                                                            <a href="{{cassetteLibrary_article.link}}" target="_blank" style="color:#4096c8;text-decoration: none;font-family: 'Muli', sans-serif;">Read Through</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr height="15"><td colspan="3"></td></tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td width="15"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr height="30">
+                        <td bgcolor="#ffffff">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" role="Presentation" style="width:100% !important;">
+                                <tr>
+                                    <td width="10"></td>
+                                    <td valign="middle"><p style="margin: 0;font-size: 60%;font-family: 'Muli', sans-serif;">Copyright 1997-2020 Pramati Technologies. All Rights Reserved.</p></td>
+                                    <td valign="middle" align="right">
+                                        <a href="https://www.pramati.com/" target="_blank"><img src="http://bit.ly/2XO3h97" alt="Pramati Technologies" width="50" /> </a>
+                                    </td>
+                                    <td width="10"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
